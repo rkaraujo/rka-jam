@@ -14,6 +14,10 @@ It's a simple project with only one model ``JobApplication`` that has all the in
 
 The job application is managed through the Django admin.
 
+## Screenshot
+
+![Admin page](screenshot.png)
+
 ## How to run locally
 
 The application was tested using a Postgres database (although it can use other Django supported databases if the
