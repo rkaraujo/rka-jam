@@ -13,6 +13,7 @@ class JobApplication(models.Model):
     notes = models.TextField(null=True, blank=True, help_text='Any notes relevant to the process')
     rejected = models.BooleanField(default=False, help_text='If I was rejected in this process')
     ghosted = models.BooleanField(default=False, help_text='If I was ghosted in this process')
+    not_proceeding = models.BooleanField(default=False, help_text="If I didn't want to proceed in the process")
 
     def __str__(self):
         return f'{self.job_title} ({self.company})'
